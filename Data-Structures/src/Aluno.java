@@ -3,7 +3,7 @@ import java.lang.constant.Constable;
 public class Aluno {
     private String nome;
 
-    public Aluno() {
+    public Aluno(String nome) {
         this.nome = nome;
     }
 
@@ -21,4 +21,5 @@ public class Aluno {
     public String toString() {
         return this.nome;
     }
+
 }
