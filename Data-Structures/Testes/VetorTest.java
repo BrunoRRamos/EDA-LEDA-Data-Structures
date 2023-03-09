@@ -1,8 +1,8 @@
-import static org.junit.jupiter.api.Assertions.*;
+import Vetor.Aluno;
+import Vetor.Vetor;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
-import java.util.NoSuchElementException;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class VetorTest {
