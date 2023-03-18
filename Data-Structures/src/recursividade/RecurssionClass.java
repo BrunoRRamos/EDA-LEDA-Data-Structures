@@ -1,9 +1,5 @@
 package recursividade;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.IntStream;
-
 import static java.lang.System.exit;
 
 public class RecurssionClass {
