@@ -51,4 +51,9 @@ public class Produto implements Comparable<Produto> {
         }
         return resp;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.codigo);
+    }
 }
