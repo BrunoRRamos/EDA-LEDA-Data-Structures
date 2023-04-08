@@ -1,4 +1,4 @@
-package ordenacao_comparacao;
+package sorting.ordenacao_comparacao;
 
 public class BubbleSort<T> implements CommonMet<T>{
 
