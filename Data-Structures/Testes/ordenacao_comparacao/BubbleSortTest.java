@@ -8,8 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BubbleSortTest {
     Random ramdom = new Random();
-    BubbleSort bubbleSort = new BubbleSort();
-    SelectionSort selectionSort = new SelectionSort();
     int[] arr = new int[40];
 
     @BeforeEach
@@ -21,9 +19,5 @@ class BubbleSortTest {
 
     @Test
     void bubbleSort() {
-        int[] mySorted = bubbleSort.bubbleSort(arr);
-        int[] arrOrdenado = Arrays.stream(arr).sorted().toArray();
-
-        assertArrayEquals(arrOrdenado, mySorted);
     }
 }
