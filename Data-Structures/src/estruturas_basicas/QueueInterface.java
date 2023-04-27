@@ -1,6 +1,6 @@
 package estruturas_basicas;
 
-public interface Queue<T> {
+public interface QueueInterface<T> {
     public void enqueue(T elemanet) throws  StackOverflowError;
     public T dequeue() throws Exception;
     public T head();

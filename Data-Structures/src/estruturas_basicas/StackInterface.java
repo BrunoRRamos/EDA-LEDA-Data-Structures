@@ -1,6 +1,6 @@
 package estruturas_basicas;
 
-public interface Stack<T> {
+public interface StackInterface<T> {
     public void push(T elemanet) throws  StackOverflowError;
     public T pop() throws Exception;
     public T top();

@@ -1,6 +1,6 @@
 package estruturas_basicas;
 
-public class StackImplement<T> implements Stack<T> {
+public class StackImplement<T> implements StackInterface<T> {
     private T[] array;
     private int top;
 

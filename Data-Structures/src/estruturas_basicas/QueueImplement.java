@@ -1,6 +1,6 @@
 package estruturas_basicas;
 
-public class QueueImplement<T> implements Queue<T> {
+public class QueueImplement<T> implements QueueInterface<T> {
 
     T[] array;
     int head;
