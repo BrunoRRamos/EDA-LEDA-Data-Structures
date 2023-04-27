@@ -1,12 +1,12 @@
 package estruturas_basicas;
 
-public class QueueImplement<T> implements QueueInterface<T> {
+public class Queue<T> implements QueueInterface<T> {
 
     T[] array;
     int head;
     int tail;
 
-    public QueueImplement(int size) {
+    public Queue(int size) {
         this.array = (T[]) new Object[size];
         this.head = 0;
         this.tail = -1;

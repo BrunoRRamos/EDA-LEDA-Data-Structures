@@ -1,10 +1,10 @@
 package estruturas_basicas;
 
-public class StackImplement<T> implements StackInterface<T> {
+public class Stack<T> implements StackInterface<T> {
     private T[] array;
     private int top;
 
-    public StackImplement(int size) {
+    public Stack(int size) {
         this.array = (T[]) new Object[size];
         this.top = -1;
     }
