@@ -1,6 +1,16 @@
 package LinkedLists;
 
-public class DoubleLinkedList<T> implements IDoubleLinkedList<T> {
+import LinkedLists.interfaces.IDoubleLinkedList;
+
+public class DoubleLinkedList<T> extends LinkedList<T> implements IDoubleLinkedList<T> {
+
+    protected DoubleLinkedList<T> previous;
+
+    public DoubleLinkedList(T data, LinkedList<T> next, DoubleLinkedList<T> previous) {
+        super(data, next);
+        this.previous = previous;
+    }
+
     @Override
     public void insertFirst(T element) {
 
@@ -16,33 +26,4 @@ public class DoubleLinkedList<T> implements IDoubleLinkedList<T> {
 
     }
 
-    @Override
-    public void insert(T element) {
-
-    }
-
-    @Override
-    public void remove(T element) {
-
-    }
-
-    @Override
-    public T search(T element) {
-        return null;
-    }
-
-    @Override
-    public int size() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public T[] toArray() {
-        return null;
-    }
 }

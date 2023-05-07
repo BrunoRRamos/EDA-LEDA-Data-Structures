@@ -1,18 +1,29 @@
 package LinkedLists;
 
+import LinkedLists.interfaces.ILinkedList;
+
 public class LinkedList<T> implements ILinkedList<T> {
+
+    protected T data;
+    protected LinkedList<T> next;
+
+    public LinkedList(T data, LinkedList<T> next) {
+        this.data = data;
+        this.next = next;
+    }
+
     @Override
-    public void insert(Object element) {
+    public void insert(T element) {
 
     }
 
     @Override
-    public void remove(Object element) {
+    public void remove(T element) {
 
     }
 
     @Override
-    public Object search(Object element) {
+    public T search(T element) {
         return null;
     }
 

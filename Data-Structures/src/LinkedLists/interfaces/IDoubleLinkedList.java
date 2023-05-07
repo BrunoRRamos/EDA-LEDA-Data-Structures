@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinkedLists.interfaces;
 
 public interface IDoubleLinkedList<T> extends ILinkedList<T> {
 
