@@ -1,4 +1,4 @@
-package estruturas_basicas;
+package Fila_Pilha;
 
 public interface StackInterface<T> {
     public void push(T elemanet) throws  StackOverflowError;

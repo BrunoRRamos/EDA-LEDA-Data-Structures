@@ -1,4 +1,4 @@
-package estruturas_basicas;
+package Fila_Pilha;
 
 public class Queue<T> implements QueueInterface<T> {
 

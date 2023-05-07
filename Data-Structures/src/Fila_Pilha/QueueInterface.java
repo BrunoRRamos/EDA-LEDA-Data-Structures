@@ -1,4 +1,4 @@
-package estruturas_basicas;
+package Fila_Pilha;
 
 public interface QueueInterface<T> {
     public void enqueue(T elemanet) throws  StackOverflowError;
