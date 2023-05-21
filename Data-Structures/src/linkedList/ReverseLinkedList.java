@@ -1,7 +1,5 @@
 package linkedList;
 
-import linkedList.SingleLinkedListImpl;
-import linkedList.SingleLinkedListNode;
 
 public class ReverseLinkedList {
 
