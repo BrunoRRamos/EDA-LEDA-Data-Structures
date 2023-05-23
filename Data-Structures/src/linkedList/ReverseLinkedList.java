@@ -1,5 +1,6 @@
 package linkedList;
 
+import java.util.ArrayList;
 
 public class ReverseLinkedList {
 
@@ -14,6 +15,4 @@ public class ReverseLinkedList {
 
         return reversed;
     }
-
-
 }
