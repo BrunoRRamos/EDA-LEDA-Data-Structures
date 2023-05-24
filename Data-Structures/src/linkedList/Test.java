@@ -10,6 +10,15 @@ public class Test {
         stack.push(3);
         stack.push(4);
 
+        System.out.println(Arrays.toString(stack.toArray()));
 
+        System.out.println(stack.pop());
+        System.out.println(Arrays.toString(stack.toArray()));
+        System.out.println(stack.pop());
+        System.out.println(Arrays.toString(stack.toArray()));
+        System.out.println(stack.pop());
+        System.out.println(Arrays.toString(stack.toArray()));
+        System.out.println(stack.pop());
+        System.out.println(Arrays.toString(stack.toArray()));
     }
 }
