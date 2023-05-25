@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        StackSingleLinkedList<Integer> stack = new StackSingleLinkedList<>(4);
+        RecurssiveStackLinkedList<Integer> stack = new RecurssiveStackLinkedList<>();
         stack.push(1);
         stack.push(2);
         stack.push(3);

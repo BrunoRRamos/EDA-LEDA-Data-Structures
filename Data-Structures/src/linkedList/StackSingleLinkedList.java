@@ -3,7 +3,7 @@ package linkedList;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class StackSingleLinkedList<T> extends SingleLinkedListImpl {
+public class StackSingleLinkedList<T> extends SingleLinkedListImpl implements Stack<T>{
 
     protected int size;
 
@@ -11,6 +11,7 @@ public class StackSingleLinkedList<T> extends SingleLinkedListImpl {
         this.size = size;
     }
 
+    @Override
     public void push(T element) {
         if (element != null) {
             if (this.head.isNIL()) {
@@ -29,6 +30,7 @@ public class StackSingleLinkedList<T> extends SingleLinkedListImpl {
         }
     }
 
+    @Override
     public T pop() {
         SingleLinkedListNode aux = this.head;
         T output = null;
