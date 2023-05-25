@@ -4,15 +4,23 @@ import java.util.ArrayList;
 
 public class ReverseLinkedList {
 
-    public static SingleLinkedListImpl reverse(SingleLinkedListImpl list) {
-        SingleLinkedListImpl reversed = new SingleLinkedListImpl();
-        SingleLinkedListNode aux = list.head;
+    public  void reverse(SingleLinkedListImpl list) {
+        SingleLinkedListNode aux = list.getHead();
+        SingleLinkedListNode temp = new SingleLinkedListNode<>();
+        SingleLinkedListNode otherAux = list.getHead().getNext();
+        SingleLinkedListNode tail = new SingleLinkedListNode<>();
 
-        while (aux.getData() != null) {
-            reversed.insertFirst(aux.getData());
-            aux = aux.next;
+        for (int i = 0; i < list.size() / 2; i++) {
+            while (!otherAux.getNext().equals(tail)) {
+                otherAux = otherAux.getNext();
+            }
+            temp.setData(aux.getData());
+            aux.setData(otherAux.getData());
+            otherAux.setData(temp.getData());
+            aux = aux.getNext();
+            tail = otherAux;
+            otherAux = aux.getNext();
         }
-
-        return reversed;
     }
+
 }

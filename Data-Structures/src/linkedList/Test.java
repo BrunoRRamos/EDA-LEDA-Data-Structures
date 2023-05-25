@@ -4,21 +4,18 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        RecurssiveStackLinkedList<Integer> stack = new RecurssiveStackLinkedList<>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
+        SingleLinkedListImpl<Integer> list = new SingleLinkedListImpl<>();
+        ReverseLinkedList reverse = new ReverseLinkedList();
 
-        System.out.println(Arrays.toString(stack.toArray()));
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        list.insert(4);
 
-        System.out.println(stack.pop());
-        System.out.println(Arrays.toString(stack.toArray()));
-        System.out.println(stack.pop());
-        System.out.println(Arrays.toString(stack.toArray()));
-        System.out.println(stack.pop());
-        System.out.println(Arrays.toString(stack.toArray()));
-        System.out.println(stack.pop());
-        System.out.println(Arrays.toString(stack.toArray()));
+        System.out.println(Arrays.toString(list.toArray()));
+
+        reverse.reverse(list);
+
+        System.out.println(Arrays.toString(list.toArray()));
     }
 }
